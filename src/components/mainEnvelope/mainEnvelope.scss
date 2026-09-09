@@ -1,4 +1,46 @@
 .mainEnvelopeSections {
+    height: 100%;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    .upEnvelope {
+        width: min(140%, 1000px);
+        aspect-ratio: 1000 / 500;
+        z-index: 1;
+        transform: translate(-1%, 1%);
+        animation: movingUpEnvelope 2s ease forwards;
+        animation-delay: 3s;
+    }
+
+    .downEnvelope {
+        width: min(140%, 1000px);
+        aspect-ratio: 1000 / 500;
+        z-index: -1;
+        position: absolute;
+        transform: translate(-1%, 3.6%);
+        animation: movingDownEnvelope 2s ease forwards;
+        animation-delay: 3s;
+    }
+}
+
+@keyframes movingUpEnvelope {
+    from {
+        transform: translate(-1%, 1%);
+    }
+
+    to {
+        transform: translate(-1%, -300%);
+    }
+}
+
+@keyframes movingDownEnvelope {
+    from {
+        transform: translate(-1%, 1%);
+    }
+
+    to {
+        transform: translate(-1%, 300%);
+    }
 }
