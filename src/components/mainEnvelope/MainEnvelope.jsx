@@ -5,8 +5,8 @@ const MainEnvelope = () => {
         <div 
         className="mainEnvelopeSections"
         >
-            <img className="upEnvelope" src="./public/images/upEnvelope.png" alt="Верхняя часть конверта" />
-            <img className="downEnvelope" src="./public/images/downEvelope" alt="Нижняя часть конверта" />
+            <img className="upEnvelope" src="/images/upEnvelope.png" alt="Верхняя часть конверта" />
+            <img className="downEnvelope" src="/images/downEnvelope.png" alt="Нижняя часть конверта" />
         </div>
     )
 }
