@@ -1,13 +1,12 @@
-import MainEnvelope from "./components/mainEnvelope/mainEnvelope"
+import MainEnvelope from "./components/mainEnvelope/MainEnvelope";
 
 const App = () => {
 
-
-    return (
-        <div className="mainEnvelopeComponent">
-            <MainEnvelope></MainEnvelope>
-        </div> 
-    )
+  return(
+    <div>
+      <MainEnvelope></MainEnvelope>
+    </div>
+  )
 }
 
 export default App
