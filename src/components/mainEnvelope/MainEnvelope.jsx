@@ -1,18 +1,16 @@
 import { useState } from "react";
 import "./mainEnvelope.scss";
 
-const MainEnvelope = () => {
-    const [isVisible, setIsVisible] = useState(true);
+const MainEnvelope = (prop) => {
 
-    const handleAnimationEnd = () => {
-        setIsVisible(false);
-        document.body.style.overflow = 'auto';
-    };
-
-    if (!isVisible) return null;
+    const {
+        handleAnimationEnd,
+    } = prop
 
     return (
-        <div className="mainEnvelopeSections">
+        <div
+            className="mainEnvelopeSections"
+        >
             <img
                 className="upEnvelope"
                 src="/images/upEnvelope.webp"

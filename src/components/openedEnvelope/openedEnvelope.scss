@@ -1,0 +1,56 @@
+.openedEnvelopeWrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 7s ease;
+
+}
+
+.apearence {
+
+    opacity: 1;
+}
+
+.coloredBackground {
+    width: min(100%, 1200px);
+    height: 85%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 100% 100% 0 0 / 45% 45% 0 0;
+    transform: scale(1.2);
+    background-color: rgba(199, 160, 110, 0.705);
+
+    @media (width:430px) {
+        height: 50%;
+        margin-top: 25%;
+    }
+}
+
+.openedEnvelope {
+    width: 120%;
+    height: 95%;
+    position: relative;
+    transform:
+        translateX(0.5%) translateY(4%);
+}
+
+.beadsWrapper {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    aspect-ratio: 1000 / 500;
+    transform:
+        scale(0.7) translateX(135%) translateY(20%) rotateX(0deg) rotateY(180deg) rotateZ(-35deg);
+
+    @media (width:430px) {
+        width: 60%;
+        transform:
+            scale(0.5) translateX(130%) translateY(33%) rotateX(0deg) rotateY(180deg) rotateZ(-25deg);
+    }
+}
