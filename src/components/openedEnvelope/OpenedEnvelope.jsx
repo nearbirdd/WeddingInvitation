@@ -1,16 +1,15 @@
 import Beads from "../beads/Beads"
-import MainEnvelope from "../mainEnvelope/MainEnvelope"
 import "./openedEnvelope.scss"
 
 const OpenedEnvelope = (prop) => {
 
     const {
-        isVisible
+        setShowOpened,
     } = prop
 
     return (
         <div 
-        className="openedEnvelopeWrapper apearence"
+        className= {`openedEnvelopeWrapper ${setShowOpened ? "apearence" : ""}`}
         >
             <div
                 className="coloredBackground">

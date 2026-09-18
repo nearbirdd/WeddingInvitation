@@ -1,0 +1,22 @@
+.textileWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: max-content;
+    opacity: 0;
+    transition: opacity 7s ease;
+
+    @media (max-width:440px) {
+        margin-top: 1%;
+    }
+
+    .textileImage {
+        width: 45%;
+        height: auto;
+
+        @media (max-width:440px) {
+            width: 95%;
+        }
+    }
+}

@@ -5,8 +5,8 @@
 }
 
 // html {
-//     width: 100vw;
-//     height: 100vh;
+//     width: 100%;
+//     height: 100%;
 // }
 
 body {
@@ -20,10 +20,14 @@ body {
 
 #root {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
     overflow-x: hidden;
+}
+
+.apearence {
+    opacity: 1;
 }

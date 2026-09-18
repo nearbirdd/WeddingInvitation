@@ -1,8 +1,10 @@
 import { useState } from "react";
 import MainEnvelope from "./components/mainEnvelope/MainEnvelope";
 import OpenedEnvelope from "./components/openedEnvelope/OpenedEnvelope";
+import Textile from "./components/textile/Textile";
 import "./index.scss";
 import "./App.scss";
+
 
 const App = () => {
     const [showMain, setShowMain] = useState(true);
@@ -18,10 +20,12 @@ const App = () => {
             {showMain && (
                 <MainEnvelope handleAnimationEnd={handleAnimationEnd} />
             )}
-
-            {showOpened && (
-                <OpenedEnvelope isVisible={true} />
-            )}
+            <OpenedEnvelope
+                setShowOpened={!showMain ? true : undefined}>
+            </OpenedEnvelope>
+            <Textile
+                setShowOpened={!showMain ? true : undefined}
+            ></Textile>
         </div>
     );
 };

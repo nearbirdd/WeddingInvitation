@@ -4,7 +4,11 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    // z-index: 1;
+    transform: translateX(30%);
+
+    @media (max-width:440px) {
+        transform: translateY(-10%);
+    }
 
     .upEnvelope {
         width: min(140%, 1000px);
