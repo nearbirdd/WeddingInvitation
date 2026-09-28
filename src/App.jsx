@@ -2,6 +2,7 @@ import { useState } from "react";
 import MainEnvelope from "./components/mainEnvelope/MainEnvelope";
 import OpenedEnvelope from "./components/openedEnvelope/OpenedEnvelope";
 import Textile from "./components/textile/Textile";
+import Location from "./components/location/Location";
 import "./index.scss";
 import "./App.scss";
 
@@ -12,7 +13,7 @@ const App = () => {
 
     const handleAnimationEnd = () => {
         setShowMain(false);
-        setShowOpened(true);   // показываем открытый конверт
+        setShowOpened(true);
     };
 
     return (
@@ -26,6 +27,7 @@ const App = () => {
             <Textile
                 setShowOpened={!showMain ? true : undefined}
             ></Textile>
+            <Location />
         </div>
     );
 };

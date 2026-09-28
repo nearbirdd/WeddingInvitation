@@ -9,6 +9,13 @@
 //     height: 100%;
 // }
 
+@font-face {
+    font-family: "Arabella";
+    src: url('/src/fonts/Arabella.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
 body {
     background: linear-gradient(135deg, #e6e1da 0%, #d8d0c5 45%, #c4b9ac 100%);
     width: 100%;
@@ -21,9 +28,6 @@ body {
 #root {
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: absolute;
     overflow-x: hidden;
 }

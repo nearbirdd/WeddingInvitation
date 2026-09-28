@@ -6,33 +6,20 @@
     opacity: 0;
     transition: opacity 7s ease;
     margin-top: 5%;
-    transform: translateX(75%);
 
-    @media (max-width:440px) {
+    @media (375px <= width <=440px) {
         width: 100%;
-        transform: none;
-    }
-
-    @media (max-width:440px) {
         height: 50%;
-        margin-top: 30%;
+        margin-top: 40%;
+        margin-bottom: 20%;
     }
 
-    @media (max-width:430px) {
-        height: 50%;
-        margin-top: 1%;
+    @media (width: 375px),
+    (width: 414px),
+    (width: 440px) {
+        height: 65%;
+        margin-bottom: 10%;
     }
-
-    @media (max-width:414px) {
-        height: 50%;
-        margin-top: 30%;
-    }
-
-    @media (max-width:390px) {
-        height: 50%;
-        margin-top: 30%;
-    }
-
 }
 
 .coloredBackground {
@@ -46,9 +33,9 @@
     transform: scale(1.2);
     background-color: rgba(199, 160, 110, 0.705);
 
-    // @media (width:430px) {
-    //     height: 100%;
-    // }
+    @media (width:430px) {
+        height: 100%;
+    }
 }
 
 .openedEnvelope {
@@ -61,16 +48,17 @@
 
 .beadsWrapper {
     width: 50%;
-    height: 100%;
+    height: 80%;
     position: absolute;
     overflow: hidden;
     aspect-ratio: 1000 / 500;
     transform:
-        scale(0.73) translateX(135%) translateY(20%) rotateX(0deg) rotateY(180deg) rotateZ(-35deg);
+        scale(0.73) translateX(135%) translateY(30%) rotateX(0deg) rotateY(180deg) rotateZ(-25deg);
 
-    @media (width:430px) {
+    @media (min-width:375px) and (max-width: 440px) {
         width: 60%;
+        height: 100%;
         transform:
-            scale(0.5) translateX(130%) translateY(33%) rotateX(0deg) rotateY(180deg) rotateZ(-25deg);
+            scale(0.5) translateX(140%) translateY(33%) rotateX(0deg) rotateY(180deg) rotateZ(-35deg);
     }
 }
