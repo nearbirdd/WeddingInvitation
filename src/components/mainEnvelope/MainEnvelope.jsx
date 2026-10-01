@@ -1,11 +1,11 @@
 import { useState } from "react";
 import "./mainEnvelope.scss";
 
-const MainEnvelope = (prop) => {
+const MainEnvelope = (props) => {
 
     const {
         handleAnimationEnd,
-    } = prop
+    } = props
 
     return (
         <div
@@ -13,13 +13,13 @@ const MainEnvelope = (prop) => {
         >
             <img
                 className="upEnvelope"
-                src="/images/upEnvelope.webp"
+                src="./images/upEnvelope.webp"
                 alt="Верхняя часть конверта"
                 onAnimationEnd={handleAnimationEnd}
             />
             <img
                 className="downEnvelope"
-                src="/images/downEnvelope.webp"
+                src="./images/downEnvelope.webp"
                 alt="Нижняя часть конверта"
                 onAnimationEnd={handleAnimationEnd}
             />

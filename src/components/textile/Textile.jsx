@@ -1,10 +1,10 @@
 import "./textile.scss"
 
-const Textile = (prop) => {
+const Textile = (props) => {
 
     const {
         setShowOpened,
-    } = prop
+    } = props
 
     return (
         <div className={`textileWrapper ${setShowOpened ? "apearence" : ""}`}>

@@ -1,11 +1,11 @@
 import Beads from "../beads/Beads"
 import "./openedEnvelope.scss"
 
-const OpenedEnvelope = (prop) => {
+const OpenedEnvelope = (props) => {
 
     const {
         setShowOpened,
-    } = prop
+    } = props
 
     return (
         <div 
