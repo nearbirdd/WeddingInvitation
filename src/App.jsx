@@ -27,7 +27,9 @@ const App = () => {
             <Textile
                 setShowOpened={!showMain ? true : undefined}
             ></Textile>
-            <Location />
+            <Location
+                setShowOpened={!showMain ? true : undefined}
+            ></Location>
         </div>
     );
 };
