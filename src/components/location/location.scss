@@ -14,7 +14,7 @@
     font-size: clamp(6rem, 30vw, 20em);
 }
 
-.cityStreet {
+.cityStreetAndAdress {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,8 +38,8 @@
 }
 
 .showLocationMap {
-    width: clamp(5rem, 85vw, 35.4rem);
-    height: clamp(1rem, 40vh, 5rem);
+    width: clamp(5rem, 78vw, 33rem);
+    height: clamp(1vh, 4vh, 5rem);
     margin: 2% 0 5% 0;
     padding: 0.2em 1rem 0.4em;
     display: inline-flex;
@@ -47,7 +47,6 @@
     justify-content: center;
     font-family: "Arabella", sans-serif;
     font-size: clamp(1rem, 11vw, 4rem);
-    // line-height: 1;
     cursor: pointer;
     border: 2px rgb(102, 45, 19) solid;
     background: none;
