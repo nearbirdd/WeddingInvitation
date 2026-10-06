@@ -21,7 +21,12 @@ function Location(props) {
             <h2 className="location">Локация</h2>
             <p className="restaurant cityStreetAndAdress">Ресторан LasVegas</p>
             <p className="cityStreet cityStreetAndAdress">г.Ставрополь ул.Черниговская 2</p>
-            <img src="./images/locationFirstPhoto.webp" alt="" className="locationFirstPhoto" />
+            <div className="locationPhotoWrapper">
+                <img src="./images/locationFirstPhoto.webp" alt="" className="locationFirstPhoto" />
+                <img src="./images/locationSecondPhoto.webp" alt="" className="locationSecondPhoto" />
+                <img src="./images/locationThirdPhoto.webp" alt="" className="locationThirdPhoto" />
+            </div>
+            
             <a
                 className="showLocationMap"
                 onClick={showMapClick}

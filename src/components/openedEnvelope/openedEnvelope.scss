@@ -1,49 +1,42 @@
 .openedEnvelopeWrapper {
-    width: 40%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     opacity: 0;
-    transition: opacity 7s ease;
+    transition: opacity 2s ease;
     margin-top: 5%;
 
-    @media (375px <= width <=440px) {
+    @media (375px <=width <=440px) {
         width: 100%;
-        height: 50%;
+        height: 100%;
         margin-top: 40%;
         margin-bottom: 20%;
     }
 
-    @media (width: 375px),
-    (width: 414px),
-    (width: 440px) {
-        height: 65%;
-        margin-bottom: 10%;
-    }
+    // @media (width: 375px),
+    // (width: 414px),
+    // (width: 440px) {
+    //     // height: 65%;
+    //     margin-bottom: 20%;
+    // }
 }
 
 .coloredBackground {
     width: min(100%, 1200px);
-    height: 85%;
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
-    border-radius: 100% 100% 0 0 / 45% 45% 0 0;
+    border-radius: 100% 100% 0 0 / 100% 100% 0 0;
     transform: scale(1.2);
     background-color: rgba(199, 160, 110, 0.705);
-
-    @media (width:430px) {
-        height: 100%;
-    }
 }
 
 .openedEnvelope {
-    width: 120%;
-    height: 95%;
-    position: relative;
+    width: 90%;
+    height: 90%;
     transform:
-        translateX(0.5%) translateY(4%);
+        translateX(-3%) translateY(6%);
 }
 
 .beadsWrapper {
@@ -59,6 +52,6 @@
         width: 60%;
         height: 100%;
         transform:
-            scale(0.5) translateX(140%) translateY(33%) rotateX(0deg) rotateY(180deg) rotateZ(-35deg);
+            scale(0.6) translateX(120%) translateY(33%) rotateX(0deg) rotateY(180deg) rotateZ(-35deg);
     }
 }
