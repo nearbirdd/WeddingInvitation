@@ -1,7 +1,7 @@
 import { useState } from "react";
 import MainEnvelope from "./components/mainEnvelope/MainEnvelope";
 import OpenedEnvelope from "./components/openedEnvelope/OpenedEnvelope";
-import Textile from "./components/textile/Textile";
+import Flowers from "./components/textile/Flowers";
 import Location from "./components/location/Location";
 import "./index.scss";
 import "./App.scss";
@@ -24,9 +24,9 @@ const App = () => {
             <OpenedEnvelope
                 setShowOpened={!showMain ? true : undefined}>
             </OpenedEnvelope>
-            <Textile
+            <Flowers
                 setShowOpened={!showMain ? true : undefined}
-            ></Textile>
+            ></Flowers>
             <Location
                 setShowOpened={!showMain ? true : undefined}
             ></Location>

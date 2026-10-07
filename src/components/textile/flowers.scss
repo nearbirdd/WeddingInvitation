@@ -1,0 +1,45 @@
+.flowersWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    // height: 100dvh;
+    opacity: 0;
+    transition: opacity 2s ease;
+
+    @media (375px <=width <=440px) {
+        margin-top: 10%;
+    }
+
+    .flowersUpWrapper,
+    .flowersUp,
+    .flowersDownWrapper,
+    .flowersDown {
+        width: 65vw;
+    }
+
+    .flowersUpWrapper {
+        margin-left: auto;
+    }
+
+    .flowersDownWrapper {
+        margin-right: auto;
+        margin-top: 30%;
+    }
+
+    .flowerWrapperMessage {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+        font-family: "Arabella", sans-serif;
+        font-size: clamp(1.8rem, 1.6rem + 0.5vw, 2rem);
+        font-style: italic;
+        color: rgb(102, 45, 19);
+
+        p {
+            word-break: break-word;
+            margin-top: 2%;
+        }
+    }
+}
