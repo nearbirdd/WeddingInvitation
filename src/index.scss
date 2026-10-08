@@ -19,12 +19,11 @@ html {
 body {
     width: 100%;
     min-height: 100dvh;
-    background: linear-gradient(135deg, #e6e1da 0%, #d8d0c5 45%, rgb(196, 185, 172) 100%);
-    background-attachment: fixed;   /* на десктопе ок, на iOS Safari может игнорироваться */
+    background: linear-gradient(135deg, #fffefb 0%, #fdf6ec 45%, #f5ead8 100%);
+    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     
-    /* Safe Area для iPhone */
     padding-top: env(safe-area-inset-top);
     padding-bottom: env(safe-area-inset-bottom);
     padding-left: env(safe-area-inset-left);
