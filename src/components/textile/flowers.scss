@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+    margin-top: 10%;
     opacity: 0;
     transition: opacity 2s ease;
 
@@ -14,30 +15,106 @@
     .flowersUp,
     .flowersDownWrapper,
     .flowersDown {
-        width: 65vw;
+        width: 30vw;
+
+        @media (375px <=width <=440px) {
+            width: 65vw;
+        }
     }
 
     .flowersUpWrapper {
-        margin-left: auto;
+        margin-left: clamp(30vw, 45vw, 80vw);
     }
 
     .flowersDownWrapper {
-        margin-right: auto;
-        margin-top: 30%;
+        margin-right: clamp(30vw, 45vw, 80vw);
+        margin-top: 65vh;
+
+        @media (width:375px) {
+            margin-top: 50vh;
+        }
+
+        @media (width:390px) {
+            margin-top: 40vh;
+        }
+
+        @media (width:414px) {
+            margin-top: 36vh;
+        }
+
+        @media (width:430px) {
+            margin-top: 34vh;
+        }
+
+        @media (width:440px) {
+            margin-top: 32vh;
+        }
     }
 
     .flowerWrapperMessage {
-        width: 70%;
+        width: max-content;
         display: flex;
+        position: absolute;
         flex-direction: column;
-        font-family: "Arabella", sans-serif;
-        font-size: clamp(1.8rem, 1.6rem + 0.5vw, 2rem);
-        font-style: italic;
-        color: rgb(102, 45, 19);
+        align-items: center;
+        transform: translateY(35%);
 
         p {
             word-break: break-word;
-            margin-top: 2%;
+            font-family: "Arabella", sans-serif;
+            font-size: 7em;
+            font-style: italic;
+            color: rgb(102, 45, 19);
+
+            @media (375px <=width <=440px) {
+                font-size: 3em;
+            }
         }
+
+        .husband {
+            margin-top: 20%;
+        }
+
+        .wife {
+            margin-bottom: 40%;
+        }
+
+        .day {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &::after {
+                content: "";
+                width: 5px;
+                height: 5px;
+                margin-top: 15%;
+                margin-bottom: 30%;
+                transform: translateX(90%);
+                background-color: rgb(102, 45, 19);
+                border: 1px solid rgb(102, 45, 19);
+                border-radius: 100%;
+            }
+        }
+
+
+        .month {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &::after {
+                content: "";
+                width: 5px;
+                height: 5px;
+                margin-top: 15%;
+                margin-bottom: 35%;
+                transform: translateX(90%);
+                background-color: rgb(102, 45, 19);
+                border: 1px solid rgb(102, 45, 19);
+                border-radius: 100%;
+            }
+        }
+
     }
 }

@@ -22,14 +22,59 @@
     align-items: center;
     border-radius: 100% 100% 0 0 / 100% 100% 0 0;
     transform: scale(1.2);
-    background-color: rgba(199, 160, 110, 0.705);
+    background-color: rgb(212, 195, 172);
+    overflow: hidden;
 }
 
 .openedEnvelope {
     width: 90%;
     height: 90%;
     transform:
-        translateX(-3%) translateY(6%);
+        translateX(5.5%) translateY(6%);
+
+    @media (375px <=width <=440px) {
+        transform:
+            translateX(-3%) translateY(6%);
+    }
+}
+
+.openedEnvelopeMessage {
+    width: 100%;
+    position: absolute;
+    transform: translateX(4%) translateY(-127%) rotate(-16.6deg);
+
+    @media (375px <=width <=440px) {
+        transform: translateX(4%) translateY(-107%) rotate(-16.2deg);
+    }
+
+    h2 {
+        margin-left: 6%;
+        margin-bottom: 3%;
+        word-break: break-word;
+        font-family: "Arabella", sans-serif;
+        font-size: 2em;
+        font-style: italic;
+        color: rgb(102, 45, 19);
+
+        @media (375px <=width <=440px) {
+            font-size: 18px;
+            margin-left: 19.5%;
+        }
+    }
+
+    h3 {
+        margin-bottom: 1%;
+        word-break: break-word;
+        font-family: "Arabella", sans-serif;
+        font-size: 2em;
+        font-style: italic;
+        color: rgb(102, 45, 19);
+
+        @media (375px <=width <=440px) {
+            font-size: 10px;
+            margin-left: 14%;
+        }
+    }
 }
 
 .beadsWrapper {

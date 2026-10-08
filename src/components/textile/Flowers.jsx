@@ -16,10 +16,12 @@ const Flowers = (props) => {
                 />
             </div>
             <div className="flowerWrapperMessage">
-                <p>хуй</p>
-                <p>залупа</p>
-                <p>пенис</p>
-                <p>хер</p>
+                <p className="husband">Артём</p>
+                <p>и</p>
+                <p className="wife">Марина</p>
+                <p className="day">05</p>
+                <p className="month">06</p>
+                <p className="year">27</p>
             </div>
             <div className="flowersDownWrapper">
                 <img

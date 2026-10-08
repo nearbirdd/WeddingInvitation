@@ -4,11 +4,6 @@
     // border: 1px solid red;
 }
 
-// html {
-//     width: 100%;
-//     height: 100%;
-// }
-
 @font-face {
     font-family: "Arabella";
     src: url('/src/fonts/Arabella.ttf');
@@ -16,20 +11,33 @@
     font-style: normal;
 }
 
-body {
-    background: linear-gradient(135deg, #e6e1da 0%, #d8d0c5 45%, #c4b9ac 100%);
+html {
     width: 100%;
     height: 100%;
-    background-attachment: fixed;
+}
+
+body {
+    width: 100%;
+    min-height: 100dvh;
+    background: linear-gradient(135deg, #e6e1da 0%, #d8d0c5 45%, rgb(196, 185, 172) 100%);
+    background-attachment: fixed;   /* на десктопе ок, на iOS Safari может игнорироваться */
     background-size: cover;
     background-repeat: no-repeat;
+    
+    /* Safe Area для iPhone */
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+    box-sizing: border-box;
 }
 
 #root {
     width: 100%;
-    height: 100%;
-    position: absolute;
+    min-height: 100dvh;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .apearence {
