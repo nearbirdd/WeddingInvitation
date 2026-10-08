@@ -54,15 +54,6 @@
     }
 }
 
-// .locationFirstPhoto {
-//     margin-top: 1%;
-
-//     @media (375px <=width <=440px) {
-//         width: 85%;
-//         scale: 0.9;
-//     }
-// }
-
 .showLocationMap {
     width: clamp(5rem, 78vw, 33rem);
     height: clamp(1vh, 4vh, 5rem);
