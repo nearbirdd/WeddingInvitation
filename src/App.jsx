@@ -1,8 +1,9 @@
 import { useState } from "react";
 import MainEnvelope from "./components/mainEnvelope/MainEnvelope";
 import OpenedEnvelope from "./components/openedEnvelope/OpenedEnvelope";
-import Flowers from "./components/textile/Flowers";
+import DateWedding from "./components/dateWedding/DateWedding";
 import Location from "./components/location/Location";
+import EveningProgram from "./components/eveningProgram/EveningProgram";
 import "./index.scss";
 import "./App.scss";
 
@@ -24,12 +25,15 @@ const App = () => {
             <OpenedEnvelope
                 setShowOpened={!showMain ? true : undefined}>
             </OpenedEnvelope>
-            <Flowers
+            <DateWedding
                 setShowOpened={!showMain ? true : undefined}
-            ></Flowers>
+            ></DateWedding>
             <Location
                 setShowOpened={!showMain ? true : undefined}
             ></Location>
+            <EveningProgram
+                setShowOpened={!showMain ? true : undefined}
+            ></EveningProgram>
         </div>
     );
 };

@@ -1,0 +1,83 @@
+.infBoardWrapper {
+    width: 95%;
+    height: min-content;
+    margin-top: 5%;
+    opacity: 0;
+
+    .boardImg {
+        width: 60%;
+        height: auto;
+
+        @media (375px <=width <=440px) {
+            width: 100%;
+            margin-top: 10%;
+        }
+    }
+
+    .infBoardContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        width: 100%;
+        height: max-content;
+
+        .contentText {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 40%;
+
+            span,
+            h2,
+            p {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                font-family: "Arabella", sans-serif;
+                font-size: clamp(1.5rem, 1.3rem + 0.2vw, 1.7rem);
+                font-style: italic;
+                color: #f5ead8;
+
+                @media (375px <=width <=440px) {
+                    font-size: clamp(1.5rem, 1.3rem + 0.2vw, 1.7rem);
+                }
+            }
+
+            h2 {
+                margin-bottom: 15%;
+                font-size: clamp(2rem, 2.1rem + 0.5vw, 3rem);
+                font-weight: bolder;
+
+                @media (375px <=width <=440px) {
+                    font-size: clamp(2rem, 2.1rem + 0.5vw, 3rem);
+                }
+            }
+
+            p::after {
+                content: "";
+                width: 0.5vw;
+                height: 5vh;
+                margin-bottom: 2%;
+                background-color: #f5ead8;
+
+                @media (375px <=width <=440px) {
+                    width: 0.5vw;
+                    height: 5vh;
+                    margin-bottom: 2%;
+                }
+            }
+        }
+
+        .lightFlowers {
+            width: 35%;
+            margin-left: 80%;
+            transform: rotateY(-180deg) translateY(-77%);
+
+            @media (375px <=width <=440px) {
+                width: 60%;
+            }
+        }
+    }
+}

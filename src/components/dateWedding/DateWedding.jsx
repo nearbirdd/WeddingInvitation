@@ -1,6 +1,6 @@
-import "./flowers.scss"
+import "./dateWedding.scss"
 
-const Flowers = (props) => {
+const DateWedding = (props) => {
 
     const {
         setShowOpened,
@@ -32,4 +32,4 @@ const Flowers = (props) => {
     )
 }
 
-export default Flowers
+export default DateWedding

@@ -4,6 +4,11 @@
     // border: 1px solid red;
 }
 
+:root {
+    --color-text: rgb(102, 45, 19);
+    --color-border: rgb(102, 45, 19);
+}
+
 @font-face {
     font-family: "Arabella";
     src: url('/src/fonts/Arabella.ttf');
@@ -23,7 +28,6 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    
     padding-top: env(safe-area-inset-top);
     padding-bottom: env(safe-area-inset-bottom);
     padding-left: env(safe-area-inset-left);
