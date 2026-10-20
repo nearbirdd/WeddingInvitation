@@ -27,6 +27,11 @@ const DateWedding = (props) => {
                     src="./images/flowersDown.webp"
                     alt="Нижние цветы"
                 />
+                <img
+                    className="ourPhoto"
+                    src="./images/ourPhoto.webp"
+                    alt="Наше фото"
+                />
             </div>
         </div>
     )

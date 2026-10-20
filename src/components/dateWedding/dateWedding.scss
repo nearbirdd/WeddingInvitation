@@ -30,6 +30,14 @@
     .flowersDownWrapper {
         transform: translateY(-50%) translateX(-15%);
         margin-right: clamp(30vw, 45vw, 80vw);
+
+        .ourPhoto {
+            position: absolute;
+            width: 35vw;
+            margin-left: 8%;
+            z-index: -1;
+            transform: rotateZ(10deg) translateY(-30%);
+        }
     }
 
     .flowerWrapperMessage {
