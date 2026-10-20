@@ -27,7 +27,11 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin-top: 40%;
+            margin-top: 15%;
+
+            @media (375px <=width <=440px) {
+                margin-top: 40%;
+            }
 
             span,
             h2,
@@ -36,7 +40,8 @@
                 flex-direction: column;
                 align-items: center;
                 font-family: "Arabella", sans-serif;
-                font-size: clamp(1.5rem, 1.3rem + 0.2vw, 1.7rem);
+                // font-size: clamp(1.5rem, 1.3rem + 0.2vw, 1.7rem);
+                font-size: 4rem;
                 font-style: italic;
                 color: #f5ead8;
 
@@ -47,7 +52,7 @@
 
             h2 {
                 margin-bottom: 15%;
-                font-size: clamp(2rem, 2.1rem + 0.5vw, 3rem);
+                font-size: 6rem;
                 font-weight: bolder;
 
                 @media (375px <=width <=440px) {
@@ -57,14 +62,16 @@
 
             p::after {
                 content: "";
-                width: 0.5vw;
-                height: 5vh;
-                margin-bottom: 2%;
+                width: 0.1vw;
+                height: 20vh;
+                margin-top: 5%;
+                margin-bottom: 5%;
                 background-color: #f5ead8;
 
                 @media (375px <=width <=440px) {
-                    width: 0.5vw;
+                    width: 0.1vw;
                     height: 5vh;
+                    margin-top: 2%;
                     margin-bottom: 2%;
                 }
             }
