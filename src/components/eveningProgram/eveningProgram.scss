@@ -2,6 +2,7 @@
     width: 95%;
     height: min-content;
     margin-top: 5%;
+    transition: opacity 2s ease;
     opacity: 0;
 
     .boardImg {
