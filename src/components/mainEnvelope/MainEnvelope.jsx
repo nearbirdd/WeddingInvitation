@@ -11,6 +11,7 @@ const MainEnvelope = (props) => {
         <div
             className="mainEnvelopeSections"
         >
+            <h2>Артём & противнаяДефка</h2>
             <img
                 className="upEnvelope"
                 src="./images/upEnvelope.webp"
@@ -23,6 +24,7 @@ const MainEnvelope = (props) => {
                 alt="Нижняя часть конверта"
                 onAnimationEnd={handleAnimationEnd}
             />
+            <span>Отправили вам приглашение</span>
         </div>
     );
 };

@@ -24,7 +24,8 @@ html {
 body {
     width: 100%;
     min-height: 100dvh;
-    background: linear-gradient(135deg, #fffefb 0%, #fdf6ec 45%, #f5ead8 100%);
+    // background: linear-gradient(135deg, #fffefb 0%, #fdf6ec 45%, #f5ead8 100%);
+    background: url("./images/bgd.jpg");
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;

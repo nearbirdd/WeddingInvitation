@@ -3,13 +3,36 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     position: absolute;
+
+    h2,
+    span {
+        text-align: center;
+        font-family: "Arabella", sans-serif;
+        font-size: clamp(1.8rem, 2rem + 0.5vw, 2rem);
+        font-style: italic;
+        font-weight: lighter;
+        color: var(--color-text);
+        animation: opa 450ms ease forwards;
+        animation-delay: 3s;
+    }
+
+    h2 {
+        transform: translateY(-10%);
+        font-size: clamp(1.8rem, 3rem + 0.5vw, 2rem);
+    }
+
+    span {
+        font-size: clamp(1.5rem, 1rem + 0.1vw, 2rem);
+        transform: translateY(50%);
+    }
 
     .upEnvelope {
         width: min(140%, 1000px);
         aspect-ratio: 1000 / 500;
         z-index: 1;
-        transform: translate(-1%, 1%);
+        transform: translate(-1.1%, -1%);
         animation: movingUpEnvelope 1s ease forwards;
         animation-delay: 3s;
     }
@@ -27,11 +50,11 @@
 
 @keyframes movingUpEnvelope {
     from {
-        transform: translate(-1%, 1%);
+        transform: translate(-1.1%, -1%);
     }
 
     to {
-        transform: translate(-1%, -205%);
+        transform: translate(-1.1%, -205%);
     }
 }
 
@@ -42,5 +65,15 @@
 
     to {
         transform: translate(-1%, 200%);
+    }
+}
+
+@keyframes opa {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
     }
 }
