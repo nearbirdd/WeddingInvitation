@@ -18,11 +18,28 @@
     p {
         margin-top: 5%;
         margin-bottom: 5%;
+        padding: 1%;
         text-align: center;
         font-family: "Arabella", sans-serif;
-        font-size: clamp(1.8rem, 1.6rem + 0.5vw, 2rem);
+        font-size: 5em;
         font-style: italic;
         color: var(--color-text);
+
+        @media (375px <=width <=440px) {
+            font-size: clamp(1.2rem, 1rem + 0.2vw, 0.7rem);
+        }
+    }
+
+    span {
+        text-align: center;
+        font-family: "Arabella", sans-serif;
+        font-size: 5em;
+        font-style: italic;
+        color: var(--color-text);
+
+        @media (375px <=width <=440px) {
+            font-size: clamp(1.2rem, 1rem + 0.2vw, 0.7rem);
+        }
     }
 
 
