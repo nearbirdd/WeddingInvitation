@@ -20,6 +20,9 @@ const App = () => {
 
     return (
         <div className="app">
+            <div className="bgg">
+                <img src="./images/bgd.webp" alt="ЕБАНЫЙ ФОН" className="bg-image" />
+            </div>
             {showMain && (
                 <MainEnvelope handleAnimationEnd={handleAnimationEnd} />
             )}
