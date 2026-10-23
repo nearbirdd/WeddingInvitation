@@ -4,6 +4,7 @@ import OpenedEnvelope from "./components/openedEnvelope/OpenedEnvelope";
 import DateWedding from "./components/dateWedding/DateWedding";
 import Location from "./components/location/Location";
 import EveningProgram from "./components/eveningProgram/EveningProgram";
+import DressCode from "./components/dressCode/DressCode";
 import "./index.scss";
 import "./App.scss";
 
@@ -34,6 +35,9 @@ const App = () => {
             <EveningProgram
                 setShowOpened={!showMain ? true : undefined}
             ></EveningProgram>
+            <DressCode
+                setShowOpened={!showMain ? true : undefined}
+            ></DressCode>
         </div>
     );
 };
