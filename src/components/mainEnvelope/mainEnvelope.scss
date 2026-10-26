@@ -10,9 +10,9 @@
     span {
         text-align: center;
         font-family: "Arabella", sans-serif;
-        font-size: clamp(1.8rem, 2rem + 0.5vw, 2rem);
+        font-size: clamp(1.5rem, 1.5rem + 0.5vw, 1.5rem);
         font-style: italic;
-        font-weight: lighter;
+        font-weight: bolder;
         color: var(--color-text);
         animation: opa 450ms ease forwards;
         animation-delay: 3s;

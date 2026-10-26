@@ -12,24 +12,29 @@
 @font-face {
     font-family: "Arabella";
     src: url('/src/fonts/Arabella.ttf');
-    font-weight: bold;
+    // font-weight: bold;
     font-style: normal;
 }
 
 html {
     width: 100%;
-    height: 100%;
+    min-height: 100vh;
     margin: 0;
 }
 
 body {
-    width: 100%;
-    min-height: 100lvh;
     // background: linear-gradient(135deg, #fffefb 0%, #fdf6ec 45%, #f5ead8 100%);
-    // padding-top: env(safe-area-inset-top);
-    // padding-bottom: env(safe-area-inset-bottom);
-    // padding-left: env(safe-area-inset-left);
-    // padding-right: env(safe-area-inset-right);
+    width: 100%;
+    min-height: 100%;
+    background-image: url("/images/bgd.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    // background-attachment: fixed; /* опционально */
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
 }
 
 #root {

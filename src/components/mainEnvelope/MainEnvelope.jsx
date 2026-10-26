@@ -11,7 +11,7 @@ const MainEnvelope = (props) => {
         <div
             className="mainEnvelopeSections"
         >
-            <h2>Артём & противнаяДефка</h2>
+            <h2>Артём & Марина</h2>
             <img
                 className="upEnvelope"
                 src="./images/upEnvelope.webp"

@@ -11,11 +11,12 @@
     width: 100%;
     margin-bottom: 8%;
     display: flex;
+    padding: 2%;
     justify-content: center;
     font-family: "Arabella", sans-serif;
     font-style: italic;
     color: rgb(102, 45, 19);
-    font-size: clamp(6rem, 28vw, 20em);
+    font-size: clamp(5rem, 27vw, 19em);
 
     @media (max-width: 440px) {
         padding-right: 5%;

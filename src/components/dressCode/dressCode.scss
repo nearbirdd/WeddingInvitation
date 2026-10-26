@@ -11,34 +11,41 @@
         margin-bottom: 5%;
         font-family: "Arabella", sans-serif;
         font-style: italic;
+        font-weight: bold;
         color: var(--color-text);
-        font-size: clamp(5rem, 23vw, 20em);
+        font-size: clamp(4rem, 22vw, 19em);
     }
 
     p {
         margin-top: 5%;
         margin-bottom: 5%;
-        padding: 1%;
+        padding-inline: 3%;
         text-align: center;
+        // text-indent: 1em;
         font-family: "Arabella", sans-serif;
         font-size: 5em;
         font-style: italic;
         color: var(--color-text);
 
         @media (375px <=width <=440px) {
-            font-size: clamp(1.2rem, 1rem + 0.2vw, 0.7rem);
+            font-size: clamp(1.25rem, 1rem + 0.2vw, 0.7rem);
+            font-style: italic;
+            font-weight:bold;
         }
     }
 
     span {
         text-align: center;
         font-family: "Arabella", sans-serif;
+        padding: 0 3% 0 3%;
         font-size: 5em;
         font-style: italic;
         color: var(--color-text);
 
         @media (375px <=width <=440px) {
-            font-size: clamp(1.2rem, 1rem + 0.2vw, 0.7rem);
+            font-size: clamp(1.25rem, 1rem + 0.2vw, 0.7rem);
+            font-style: italic;
+            font-weight: bolder;
         }
     }
 
