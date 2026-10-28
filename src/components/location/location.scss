@@ -67,7 +67,7 @@
 }
 
 .showLocationMap {
-    width: clamp(5rem, 78vw, 33rem);
+    width: clamp(5rem, 70vw, 33rem);
     height: clamp(1vh, 4vh, 5rem);
     margin: 2% 0 5% 0;
     padding: 0.2em 1rem 0.4em;
@@ -75,13 +75,14 @@
     align-items: center;
     justify-content: center;
     font-family: "Arabella", sans-serif;
-    font-size: clamp(1rem, 11vw, 4rem);
+    font-weight: bold;
+    font-size: clamp(1rem, 7vw, 4rem);
     cursor: pointer;
     border: 2px rgb(102, 45, 19) solid;
     background: none;
     color: rgb(102, 45, 19);
 
     @media (375px <=width <=440px) {
-        margin: 15% 0 0 0;
+        margin: 10% 0 0 0;
     }
 }
