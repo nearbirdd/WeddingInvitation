@@ -56,13 +56,13 @@
     li {
         display: flex;
         flex-direction: column;
-        width: 100%;
-        margin-left: 35%;
+        width: max-content;
+        margin-right: 6%;
 
 
 
         label {
-            width: 100%;
+            width: max-content;
             font-size: 1.5em;
             margin-bottom: 5%;
             font-size: 1.3em;
