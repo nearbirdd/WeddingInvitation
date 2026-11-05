@@ -5,6 +5,7 @@ import DateWedding from "./components/dateWedding/DateWedding";
 import Location from "./components/location/Location";
 import EveningProgram from "./components/eveningProgram/EveningProgram";
 import DressCode from "./components/dressCode/DressCode";
+import GuestForm from "./components/guestForm/GuestForm";
 import "./index.scss";
 import "./App.scss";
 
@@ -38,6 +39,9 @@ const App = () => {
             <DressCode
                 setShowOpened={!showMain ? true : undefined}
             ></DressCode>
+            <GuestForm
+                setShowOpened={!showMain ? true : undefined}
+            ></GuestForm>
         </div>
     );
 };
