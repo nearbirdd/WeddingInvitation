@@ -9,7 +9,11 @@
     opacity: 0;
 
     .boardImg {
-        width: 95%;
+        width: 60%;
+
+        @media (375px <=width <=440px) {
+            width: 95%;
+        }
     }
 
     .contentGuestForm {
@@ -36,21 +40,34 @@
     h2 {
         font-family: "Arabella", sans-serif;
         font-style: italic;
-        font-size: 3em;
+        font-size: 10em;
         color: #f5ead8;
         margin-bottom: 5%;
+
+        @media (375px <=width <=440px) {
+            font-size: 3em;
+        }
     }
 
     p {
-        padding-inline: 12%;
+        padding-inline: 25%;
         text-indent: 10%;
-        font-size: 1.3em;
+        font-size: 3em;
+
+        @media (375px <=width <=440px) {
+            padding-inline: 12%;
+            font-size: 1.3em;
+        }
     }
 
     span {
         margin-top: 5%;
         margin-bottom: 5%;
-        font-size: 1.3em;
+        font-size: 3em;
+
+        @media (375px <=width <=440px) {
+            font-size: 1.3em;
+        }
     }
 
     li {
@@ -65,14 +82,18 @@
             width: max-content;
             font-size: 1.5em;
             margin-bottom: 5%;
-            font-size: 1.3em;
+            font-size: 3em;
             text-align: left;
+
+            @media (375px <=width <=440px) {
+                font-size: 1.3em;
+            }
 
             input {
                 margin-right: 5%;
                 appearance: none;
-                width: 14px;
-                height: 14px;
+                width: 22px;
+                height: 22px;
                 border: 1px solid #f5ead8;
                 border-radius: 50%;
                 margin-right: 8px;
@@ -80,10 +101,16 @@
                 cursor: pointer;
                 outline: none;
 
+                @media (375px <=width <=440px) {
+                    width: 14px;
+                    height: 14px;
+                }
+
+
                 &:checked {
                     border-color: #f5ead8;
                 }
-                
+
                 &:checked::after {
                     content: "";
                     position: absolute;
@@ -94,14 +121,13 @@
                     height: 10px;
                     border-radius: 50%;
                     background-color: #a8997f;
-                    /* Цвет точки */
                 }
             }
         }
     }
 
     #FullNameGuest {
-        width: 70%;
+        width: 30%;
         margin-top: 5%;
         margin-bottom: 10%;
         background-color: transparent;
@@ -110,14 +136,23 @@
         font-size: 1.3em;
         text-indent: 4%;
         outline: none;
+
+        @media (375px <=width <=440px) {
+            width: 70%;
+        }
     }
 
     .acceptPresent {
-        width: 70%;
-        height: 3rem;
+        width: 35%;
+        height: 4rem;
         background-color: transparent;
         border: 2px #f5ead8 solid;
         text-align: center;
         font-size: 1.3em;
+
+        @media (375px <=width <=440px) {
+            width: 70%;
+            height: 3rem;
+        }
     }
 }
