@@ -1,163 +1,3 @@
-// .guestFormWrapper {
-//     width: 100%;
-//     height: 100%;
-//     margin-top: 15%;
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     transition: opacity 2s ease;
-//     opacity: 0;
-
-//     .boardImg {
-//         width: 60%;
-
-//         @media (375px <=width <=440px) {
-//             width: 95%;
-//         }
-//     }
-
-//     .contentGuestForm {
-//         width: 100%;
-//         position: absolute;
-//         display: flex;
-//         flex-direction: column;
-//         align-items: center;
-//         transform: translateY(12%);
-//     }
-
-//     p,
-//     span,
-//     label,
-//     #FullNameGuest,
-//     .acceptPresent {
-//         font-family: "Arabella", sans-serif;
-//         font-size: clamp(1.5rem, 1.3rem + 0.2vw, 1.7rem);
-//         font-style: italic;
-//         color: #f5ead8;
-//         text-align: justify;
-//     }
-
-//     h2 {
-//         font-family: "Arabella", sans-serif;
-//         font-style: italic;
-//         font-size: 10em;
-//         color: #f5ead8;
-//         margin-bottom: 5%;
-
-//         @media (375px <=width <=440px) {
-//             font-size: 3em;
-//         }
-//     }
-
-//     p {
-//         padding-inline: 25%;
-//         text-indent: 10%;
-//         font-size: 3em;
-
-//         @media (375px <=width <=440px) {
-//             padding-inline: 12%;
-//             font-size: 1.3em;
-//         }
-//     }
-
-//     span {
-//         margin-top: 15%;
-//         margin-bottom: 5%;
-//         font-size: 3em;
-
-//         @media (375px <=width <=440px) {
-//             font-size: 1.3em;
-//         }
-//     }
-
-//     li {
-//         display: flex;
-//         flex-direction: column;
-//         width: max-content;
-//         margin-right: 6%;
-
-
-
-//         label {
-//             width: max-content;
-//             font-size: 1.5em;
-//             margin-bottom: 5%;
-//             font-size: 3em;
-//             text-align: left;
-
-//             @media (375px <=width <=440px) {
-//                 font-size: 1.3em;
-//             }
-
-//             input {
-//                 margin-right: 5%;
-//                 appearance: none;
-//                 width: 22px;
-//                 height: 22px;
-//                 border: 1px solid #f5ead8;
-//                 border-radius: 50%;
-//                 margin-right: 8px;
-//                 position: relative;
-//                 cursor: pointer;
-//                 outline: none;
-
-//                 @media (375px <=width <=440px) {
-//                     width: 14px;
-//                     height: 14px;
-//                 }
-
-
-//                 &:checked {
-//                     border-color: #f5ead8;
-//                 }
-
-//                 &:checked::after {
-//                     content: "";
-//                     position: absolute;
-//                     top: 50%;
-//                     left: 50%;
-//                     transform: translate(-50%, -50%);
-//                     width: 10px;
-//                     height: 10px;
-//                     border-radius: 50%;
-//                     background-color: #a8997f;
-//                 }
-//             }
-//         }
-//     }
-
-//     #FullNameGuest {
-//         width: 30%;
-//         margin-top: 5%;
-//         margin-bottom: 10%;
-//         background-color: transparent;
-//         border: none;
-//         border-bottom: 2px #f5ead8 solid;
-//         font-size: 1.3em;
-//         text-indent: 4%;
-//         outline: none;
-
-//         @media (375px <=width <=440px) {
-//             width: 70%;
-//         }
-//     }
-
-//     .acceptPresent {
-//         width: 35%;
-//         height: 4rem;
-//         background-color: transparent;
-//         border: 2px #f5ead8 solid;
-//         text-align: center;
-//         font-size: 1.3em;
-
-//         @media (375px <=width <=440px) {
-//             width: 70%;
-//             height: 3rem;
-//         }
-//     }
-// }
-
-
 .guestFormWrapper {
     width: 100%;
     height: 100%;
@@ -173,6 +13,7 @@
 
         @media (375px <=width <=440px) {
             width: 95%;
+            height: 45rem;
         }
     }
 
@@ -346,9 +187,59 @@
         text-align: center;
         padding-inline: 0;
         text-indent: 0;
-        
+
         @media (375px <=width <=440px) {
             font-size: 1.2em;
         }
     }
 }
+
+// ... ваш существующий код ...
+
+.guestCountWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+    width: 100%;
+
+    label {
+        margin-bottom: 2%;
+        font-size: 1.5em; // Чуть меньше, чем основной текст
+        text-align: center;
+
+        @media (375px <=width <=440px) {
+            font-size: 1.2em;
+        }
+    }
+
+    #guestCount {
+        width: 15%; // Узкое поле для числа
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px #f5ead8 solid;
+        font-family: "Arabella", sans-serif;
+        font-size: 1.5em;
+        color: #f5ead8;
+        text-align: center;
+        outline: none;
+        font-style: italic;
+
+        @media (375px <=width <=440px) {
+            width: 30%;
+        }
+
+        /* Убираем стрелочки (спиннеры) в инпутах type="number" для красоты */
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        &[type=number] {
+            -moz-appearance: textfield;
+        }
+    }
+}
+
+// Остальные стили (p, span, li, #FullNameGuest и т.д.) остаются без изменений...
