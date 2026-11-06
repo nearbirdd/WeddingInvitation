@@ -70,12 +70,13 @@
     }
 
     span {
-        margin-top: 15%;
+        margin-top: 5%;
         margin-bottom: 5%;
         font-size: 3em;
 
         @media (375px <=width <=440px) {
             font-size: 1.3em;
+            margin-top: 15%;
         }
     }
 
